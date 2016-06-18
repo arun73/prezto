@@ -11,3 +11,42 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# Path to Android SDK
+export ANDROID_HOME=/home/arun/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+# added by Anaconda2 4.0.0 installer
+export PATH="/opt/myapps/anaconda2/bin:$PATH"
+
+# My aliases
+alias pyact='source activate'
+alias pydeact='source deactivate'
+
+alias ipy='ipython'
+alias py='python'
+
+alias cdwww='cd /var/www/html'
+alias cdjunk='cd ~/Documents/Junk'
+alias cdprojs='cd ~/Documents/Projects'
+alias cddocs='cd ~/Documents'
+alias cddownlds='cd ~/Downloads'
+alias cdandroid='cd $ANDROID_HOME/'
+alias cdkaggle='cd /home/arun/Documents/Projects/Kaggle'
+
+alias agu='sudo apt-get update'
+alias pipi='sudo pip install -H'
+
+# youtube-dl alias
+alias ytubef="youtube-dl -o '%(title)s.%(ext)s' --restrict-filenames"
+alias ytubep="youtube-dl -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s'"
+
+# just source that file to enable shell completion on umake
+#eval "$(register-python-argcomplete bin/umake)"
+
+# NVM
+export NVM_DIR="/home/arun/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# NVM Remote Fix
+export NVM_NODEJS_ORG_MIRROR="http://nodejs.org/dist"
+#export NVM_IOJS_ORG_MIRROR="http://npm.taobao.org/mirrors/iojs/"
