@@ -12,6 +12,9 @@ fi
 
 # Customize to your needs...
 
+# Setting JAVA_HOME
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre
+
 # Path to Android SDK
 export ANDROID_HOME=/home/arun/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
